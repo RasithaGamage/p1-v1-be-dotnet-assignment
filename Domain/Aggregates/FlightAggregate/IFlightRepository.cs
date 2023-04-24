@@ -1,9 +1,11 @@
+using Domain.Aggregates.AirportAggregate;
+using Domain.SeedWork;
 using System;
 using System.Threading.Tasks;
 
 namespace Domain.Aggregates.FlightAggregate
 {
-    public interface IFlightRepository
+    public interface IFlightRepository : IRepository<Flight>
     {
         Flight Add(Flight flight);
 
